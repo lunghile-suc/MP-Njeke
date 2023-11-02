@@ -1,0 +1,404 @@
+header {
+  background-image: url(/Images/bg_img@2x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+@media screen and (min-width: 992px) {
+  header {
+    height: 130vh;
+  }
+}
+
+.nav_section {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 0.2rem 0 0 0.5rem;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 100;
+  transition: all 0.8s, opacity 0.8s;
+}
+@media screen and (min-width: 992px) {
+  nav {
+    padding: 0.7rem 5rem;
+    margin: 0 auto;
+    height: initial;
+  }
+}
+nav .logo img {
+  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  nav .logo img {
+    margin-left: 2rem;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 992px) {
+  nav .logo img {
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  nav .nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+nav ul {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  left: 0;
+  top: 60px;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+@media screen and (min-width: 992px) {
+  nav ul {
+    position: initial;
+    flex-direction: row;
+    justify-content: center;
+    background-color: initial;
+    width: initial;
+    transform: none;
+    transition: none;
+    top: 0;
+    padding: 1rem 0;
+  }
+}
+nav ul li {
+  padding: 0 0.5rem 0 0.5rem;
+}
+@media screen and (min-width: 992px) {
+  nav ul li {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+}
+nav ul li:nth-child(1) {
+  padding-top: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  nav ul li:nth-child(1) {
+    padding-top: initial;
+  }
+}
+nav ul li:nth-child(4) {
+  padding-bottom: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  nav ul li:nth-child(4) {
+    padding-bottom: initial;
+  }
+}
+nav ul li a {
+  display: inline-block;
+  padding: 1rem 0 1rem 0;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 100%;
+  color: #671314;
+}
+nav ul li a:hover {
+  background-color: #E0A83B;
+  color: #fff;
+  border-radius: 5px;
+}
+@media screen and (min-width: 992px) {
+  nav ul li a {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+  }
+  nav ul li a:hover {
+    border-radius: 5px;
+  }
+}
+nav .menu-toggle {
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  width: 50px;
+  height: 40px;
+  z-index: 10;
+  padding: 2px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+@media screen and (min-width: 992px) {
+  nav .menu-toggle {
+    display: none;
+  }
+}
+nav .menu-toggle .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 7px auto;
+}
+
+nav.hide {
+  opacity: 0;
+  transition: all 0.8s, opacity 0.8s;
+}
+
+nav.scrolled {
+  background-color: green;
+  transition: all 0.2s ease-in-out;
+}
+
+ul.active {
+  transform: scale(1);
+}
+
+.author-section {
+  background-image: url(/Images/bg_2@3x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 5rem 0;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .author-section {
+    background-size: 100% 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .author-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.author-section .section-header {
+  padding: 0rem 0;
+}
+.author-section .section-header h1 {
+  color: #E0A83B;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.author-section p {
+  padding: 1rem 0;
+  color: #d1d1d1;
+  text-align: left;
+}
+@media screen and (min-width: 992px) {
+  .author-section p {
+    line-height: 35px;
+  }
+}
+.author-section img {
+  display: inline-block;
+}
+
+.shop-section .section-content {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+.shop-section .section-content .shop-cards {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .shop-section .section-content .shop-cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.shop-section .section-content .shop-cards .shop-card {
+  width: 200px;
+  background-color: #dfdcdc;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem;
+  display: grid;
+  justify-content: center;
+}
+.shop-section .section-content .shop-cards .shop-card .card-icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.shop-section .section-content .shop-cards .shop-card .card-icon img {
+  width: 60%;
+}
+.shop-section .section-content .shop-cards .shop-card .card-btn {
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: #671314;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.shop-section .section-content .shop-cards .shop-card .card-btn a {
+  display: inline-block;
+  color: white;
+}
+
+.summary-section .content_2 {
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .summary-section .content_2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1.2fr;
+  }
+}
+.summary-section .content_2 div p {
+  text-align: left;
+}
+
+.contact-section {
+  background-image: url(/Images/bg_3@3x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+.contact-section .form-inputs div input {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+.contact-section .form-inputs .btn-submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-section .form-inputs .btn-submit .btn {
+  width: 50%;
+  padding: 0.8rem;
+  margin: 0.5rem auto;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: #671314;
+  color: white;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat-Regular.ttf");
+}
+body {
+  font-family: "Montserrat-Regular", sans-serif;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "Montserrat-Regular", sans-serif;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Montserrat-Regular", sans-serif;
+  line-height: 30px;
+  text-align: center;
+  color: #333333;
+}
+
+section {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.section-header {
+  position: relative;
+  width: 100%;
+  background: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+.section-header p,
+.section-header h1 {
+  text-align: center;
+  color: #671314;
+}
+.section-header p {
+  font-size: 0.8rem;
+}
+.section-header p:last-child {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.container {
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 570px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}/*# sourceMappingURL=main.css.map */

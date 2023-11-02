@@ -1,0 +1,101 @@
+$primary_color: #671314;
+$secondary_color: #E0A83B;
+// $third_color: #778D9D;
+
+@import 'mixins';
+@import 'header';
+@import 'navbar';
+@import 'author';
+@import 'shop';
+@import 'summary';
+@import 'introduction';
+@import 'contact';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("/fonts/Montserrat-Regular.ttf");
+}
+
+body {
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Montserrat-Regular', sans-serif;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Montserrat-Regular', sans-serif;
+    line-height: 30px;
+    text-align: center;
+    color: #333333;
+}
+
+section {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.section-header {
+    position: relative;
+    width: 100%;
+    background: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    padding: 2rem;
+
+    p,
+    h1 {
+        text-align: center;
+        color: $primary_color;
+    }
+
+    p {
+        font-size: 0.8rem;
+
+        &:last-child {
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+    }
+}
+
+.container {
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include mediaQuery(480px) {
+        max-width: 570px;
+    }
+
+    @include mediaQuery(768px) {
+        max-width: 720px;
+    }
+
+    @include mediaQuery(992px) {
+        max-width: 960px;
+    }
+
+    @include mediaQuery(1200px) {
+        max-width: 1140px;
+    }
+}

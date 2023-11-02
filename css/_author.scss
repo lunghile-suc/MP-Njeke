@@ -1,0 +1,48 @@
+.author-section {
+    background-image: url(/Images/bg_2@3x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 5rem 0;
+    overflow: hidden;
+
+    @include mediaQuery(768px) {
+        background-size: 100% 100%;
+    }
+
+    .container {
+        @include mediaQuery(768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .section-header {
+
+        padding: 0rem 0;
+
+        h1 {
+            color: $secondary_color;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    p {
+        padding: 1rem 0;
+        color: #d1d1d1;
+        text-align: left;
+
+        @include mediaQuery(992px) {
+            line-height: 35px;
+        }
+    }
+
+    img{
+        display: inline-block;
+    }
+}

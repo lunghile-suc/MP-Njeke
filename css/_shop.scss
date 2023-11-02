@@ -1,0 +1,52 @@
+.shop-section {
+    .section-content {
+
+        width: 100%;
+        display: grid;
+        justify-content: center;
+
+        .shop-cards {
+            width: 100%;
+            display: grid;
+            justify-content: center;
+
+            @include mediaQuery(768px) {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+            .shop-card {
+                width: 200px;
+                background-color: #dfdcdc;
+                border-radius: 20px;
+                padding: 1rem;
+                margin: 1rem;
+                display: grid;
+                justify-content: center;
+
+                .card-icon {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 60%;
+                    }
+                }
+
+                .card-btn {
+                    text-align: center;
+                    padding: 0.5rem;
+                    margin-top: 1rem;
+                    background-color: $primary_color;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+
+                    a {
+                        display: inline-block;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
