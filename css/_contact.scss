@@ -5,9 +5,15 @@
     background-size: cover;
     width: 100%;
     overflow: hidden;
-    padding: 1rem 0;
+    padding: 5.5rem 0;
 
     .form-inputs{
+        @include mediaQuery(768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+            justify-content: center;
+        }
         div{
             input{
                 width: 100%;
@@ -19,24 +25,27 @@
                 border-radius: 20px;
             }
         }
+    }
 
-        .btn-submit{
-            width: 100%;
-            display: flex;
-            justify-content: center;
+    .btn-submit{
+        width: 100%;
+        display: flex;
+        justify-content: center;
 
-            .btn{
-                width: 50%;
-                padding: 0.8rem;
-                margin: 0.5rem auto;
-                text-align: center;
-                outline: none;
-                border: none;
-                border-radius: 20px;
-                background-color: $primary_color;
-                color: white;
-                cursor: pointer;
-                
+        .btn{
+            width: 50%;
+            padding: 0.8rem;
+            margin: 0.5rem auto;
+            text-align: center;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            background-color: $primary_color;
+            color: white;
+            cursor: pointer;
+            
+            @include mediaQuery(768px) {
+                width: 20%;
             }
         }
     }

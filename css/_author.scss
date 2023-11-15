@@ -4,14 +4,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    padding: 5rem 0;
     overflow: hidden;
 
     @include mediaQuery(768px) {
         background-size: 100% 100%;
     }
 
-    .container {
+    .author-contents{
         @include mediaQuery(768px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -21,7 +20,6 @@
     }
 
     .section-header {
-
         padding: 0rem 0;
 
         h1 {
@@ -42,7 +40,9 @@
         }
     }
 
-    img{
-        display: inline-block;
+    .section-img{
+        img{
+            
+        }
     }
 }
