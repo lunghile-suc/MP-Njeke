@@ -4,18 +4,24 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    padding: 3rem 0;
     overflow: hidden;
 
     @include mediaQuery(768px) {
         background-size: 100% 100%;
     }
 
-    .author-contents{
+    @include mediaQuery(992px) {
+        padding: 0;
+    }
+
+    .author-contents {
         @include mediaQuery(768px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
         }
     }
 
@@ -40,9 +46,9 @@
         }
     }
 
-    .section-img{
-        img{
-            
-        }
+    .section-img {
+        position: relative;
+        top: 120px;
+        overflow: hidden;
     }
 }

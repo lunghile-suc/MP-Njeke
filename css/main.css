@@ -179,11 +179,17 @@ ul.active {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  padding: 3rem 0;
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .author-section {
     background-size: 100% 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .author-section {
+    padding: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -192,6 +198,7 @@ ul.active {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
 }
 .author-section .section-header {
@@ -213,6 +220,12 @@ ul.active {
     line-height: 35px;
   }
 }
+.author-section .section-img {
+  position: relative;
+  top: 120px;
+  overflow: hidden;
+}
+
 .shop-section {
   padding: 5rem 0;
 }
