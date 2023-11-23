@@ -192,13 +192,15 @@ ul.active {
     padding: 0;
   }
 }
+.author-section .author-contents {
+  overflow: hidden;
+}
 @media screen and (min-width: 768px) {
   .author-section .author-contents {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
   }
 }
 .author-section .section-header {
@@ -222,8 +224,12 @@ ul.active {
 }
 .author-section .section-img {
   position: relative;
-  top: 120px;
   overflow: hidden;
+}
+@media screen and (min-width: 992px) {
+  .author-section .section-img {
+    top: 120px;
+  }
 }
 
 .shop-section {

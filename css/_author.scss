@@ -16,12 +16,12 @@
     }
 
     .author-contents {
+        overflow: hidden;
         @include mediaQuery(768px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
         }
     }
 
@@ -48,7 +48,10 @@
 
     .section-img {
         position: relative;
-        top: 120px;
         overflow: hidden;
+
+        @include mediaQuery(992px) {
+            top: 120px;
+        }
     }
 }
