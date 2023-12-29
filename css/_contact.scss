@@ -49,4 +49,34 @@
             }
         }
     }
+
+    .contact-contents{
+        margin-top: 2rem;
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            margin: 2rem 0;
+    
+            img{
+                width: 80%;
+                margin-top: 0.5rem;
+                margin-right: 1rem;
+
+            }
+    
+            div {
+                p {
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    color: #f2efef;
+                    text-align: left;
+                }
+    
+                a {
+                    color: #f2efef;
+                }
+            }
+        }
+    }
 }
